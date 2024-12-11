@@ -13,6 +13,7 @@
 		3F12E18A2D06EE6C004D0B92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F12E1882D06EE6C004D0B92 /* Main.storyboard */; };
 		3F12E18C2D06EE6F004D0B92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F12E18B2D06EE6F004D0B92 /* Assets.xcassets */; };
 		3F12E18F2D06EE6F004D0B92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F12E18D2D06EE6F004D0B92 /* LaunchScreen.storyboard */; };
+		3F12E7AD2D09751700A775C5 /* CharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F12E7AC2D09751700A775C5 /* CharacterModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		3F12E18B2D06EE6F004D0B92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F12E18E2D06EE6F004D0B92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F12E1902D06EE6F004D0B92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F12E7AC2D09751700A775C5 /* CharacterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		3F12E1812D06EE6C004D0B92 /* SwiftGameTest */ = {
 			isa = PBXGroup;
 			children = (
+				3F12E7AB2D0974DB00A775C5 /* Models */,
 				3F12E1822D06EE6C004D0B92 /* AppDelegate.swift */,
 				3F12E1842D06EE6C004D0B92 /* SceneDelegate.swift */,
 				3F12E1862D06EE6C004D0B92 /* ViewController.swift */,
@@ -65,6 +68,14 @@
 				3F12E1902D06EE6F004D0B92 /* Info.plist */,
 			);
 			path = SwiftGameTest;
+			sourceTree = "<group>";
+		};
+		3F12E7AB2D0974DB00A775C5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3F12E7AC2D09751700A775C5 /* CharacterModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F12E1872D06EE6C004D0B92 /* ViewController.swift in Sources */,
+				3F12E7AD2D09751700A775C5 /* CharacterModel.swift in Sources */,
 				3F12E1832D06EE6C004D0B92 /* AppDelegate.swift in Sources */,
 				3F12E1852D06EE6C004D0B92 /* SceneDelegate.swift in Sources */,
 			);
