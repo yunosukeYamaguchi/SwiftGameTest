@@ -332,6 +332,25 @@
                             <constraint firstItem="Uxd-k9-6UT" firstAttribute="top" secondItem="QUt-Ap-nlD" secondAttribute="bottom" id="tAf-eq-zx6"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bottomBaseView" destination="tCE-TK-A3L" id="lDb-k1-GKc"/>
+                        <outlet property="cleanButton" destination="vBU-fM-zRR" id="qsf-qX-7jf"/>
+                        <outlet property="comfyPointValueLabel" destination="rgk-02-jyy" id="Qek-R8-BGg"/>
+                        <outlet property="eatButton" destination="D6l-Kt-ztV" id="Uqn-iQ-5oY"/>
+                        <outlet property="favPointValueLabel" destination="6k4-qK-8Uy" id="ND1-Pi-cHg"/>
+                        <outlet property="lifePointValueLabel" destination="Ryd-nL-Kfg" id="yTf-iw-7fG"/>
+                        <outlet property="playButton" destination="bbG-o0-BZT" id="htF-7a-3Mc"/>
+                        <outlet property="topBaseView" destination="QUt-Ap-nlD" id="X0C-ZK-mlF"/>
+                        <outletCollection property="characterImageView" destination="6Bd-88-hNR" collectionClass="NSMutableArray" id="3Y5-Hg-TZD"/>
+                        <outletCollection property="characterImageView" destination="LNt-za-9Gc" collectionClass="NSMutableArray" id="dNz-ax-nQ8"/>
+                        <outletCollection property="characterImageView" destination="e7V-i1-9St" collectionClass="NSMutableArray" id="I7u-aN-HtI"/>
+                        <outletCollection property="characterImageView" destination="ILG-RZ-Q3b" collectionClass="NSMutableArray" id="5Qn-8k-1EB"/>
+                        <outletCollection property="characterImageView" destination="Z7A-I4-7Ks" collectionClass="NSMutableArray" id="w6P-aq-nGC"/>
+                        <outletCollection property="characterImageView" destination="Bgn-4D-3tz" collectionClass="NSMutableArray" id="fEO-Bo-dtj"/>
+                        <outletCollection property="characterImageView" destination="UNt-gB-coQ" collectionClass="NSMutableArray" id="Lvc-ni-Tgj"/>
+                        <outletCollection property="characterImageView" destination="88T-pM-aIw" collectionClass="NSMutableArray" id="OcP-cy-L6C"/>
+                        <outletCollection property="characterImageView" destination="yM0-W8-ihj" collectionClass="NSMutableArray" id="MYK-bS-9NQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" id="dss-sX-xM6">
