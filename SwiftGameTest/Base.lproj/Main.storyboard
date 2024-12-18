@@ -94,7 +94,7 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(水)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PVO-mZ-aAZ">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(sun)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PVO-mZ-aAZ">
                                                         <rect key="frame" x="0.0" y="64.5" width="124.5" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
@@ -336,20 +336,22 @@
                         <outlet property="bottomBaseView" destination="tCE-TK-A3L" id="lDb-k1-GKc"/>
                         <outlet property="cleanButton" destination="vBU-fM-zRR" id="qsf-qX-7jf"/>
                         <outlet property="comfyPointValueLabel" destination="rgk-02-jyy" id="Qek-R8-BGg"/>
+                        <outlet property="dateLabel" destination="fn7-GB-B6E" id="fLK-E2-5xv"/>
+                        <outlet property="dayOfWeekLabel" destination="PVO-mZ-aAZ" id="lfp-Lf-XNT"/>
                         <outlet property="eatButton" destination="D6l-Kt-ztV" id="Uqn-iQ-5oY"/>
                         <outlet property="favPointValueLabel" destination="6k4-qK-8Uy" id="ND1-Pi-cHg"/>
                         <outlet property="lifePointValueLabel" destination="Ryd-nL-Kfg" id="yTf-iw-7fG"/>
                         <outlet property="playButton" destination="bbG-o0-BZT" id="htF-7a-3Mc"/>
                         <outlet property="topBaseView" destination="QUt-Ap-nlD" id="X0C-ZK-mlF"/>
-                        <outletCollection property="characterImageView" destination="6Bd-88-hNR" collectionClass="NSMutableArray" id="3Y5-Hg-TZD"/>
-                        <outletCollection property="characterImageView" destination="LNt-za-9Gc" collectionClass="NSMutableArray" id="dNz-ax-nQ8"/>
-                        <outletCollection property="characterImageView" destination="e7V-i1-9St" collectionClass="NSMutableArray" id="I7u-aN-HtI"/>
-                        <outletCollection property="characterImageView" destination="ILG-RZ-Q3b" collectionClass="NSMutableArray" id="5Qn-8k-1EB"/>
-                        <outletCollection property="characterImageView" destination="Z7A-I4-7Ks" collectionClass="NSMutableArray" id="w6P-aq-nGC"/>
-                        <outletCollection property="characterImageView" destination="Bgn-4D-3tz" collectionClass="NSMutableArray" id="fEO-Bo-dtj"/>
-                        <outletCollection property="characterImageView" destination="UNt-gB-coQ" collectionClass="NSMutableArray" id="Lvc-ni-Tgj"/>
-                        <outletCollection property="characterImageView" destination="88T-pM-aIw" collectionClass="NSMutableArray" id="OcP-cy-L6C"/>
-                        <outletCollection property="characterImageView" destination="yM0-W8-ihj" collectionClass="NSMutableArray" id="MYK-bS-9NQ"/>
+                        <outletCollection property="characterImageViews" destination="6Bd-88-hNR" collectionClass="NSMutableArray" id="3Y5-Hg-TZD"/>
+                        <outletCollection property="characterImageViews" destination="LNt-za-9Gc" collectionClass="NSMutableArray" id="dNz-ax-nQ8"/>
+                        <outletCollection property="characterImageViews" destination="e7V-i1-9St" collectionClass="NSMutableArray" id="I7u-aN-HtI"/>
+                        <outletCollection property="characterImageViews" destination="ILG-RZ-Q3b" collectionClass="NSMutableArray" id="5Qn-8k-1EB"/>
+                        <outletCollection property="characterImageViews" destination="Z7A-I4-7Ks" collectionClass="NSMutableArray" id="w6P-aq-nGC"/>
+                        <outletCollection property="characterImageViews" destination="Bgn-4D-3tz" collectionClass="NSMutableArray" id="fEO-Bo-dtj"/>
+                        <outletCollection property="characterImageViews" destination="UNt-gB-coQ" collectionClass="NSMutableArray" id="Lvc-ni-Tgj"/>
+                        <outletCollection property="characterImageViews" destination="88T-pM-aIw" collectionClass="NSMutableArray" id="OcP-cy-L6C"/>
+                        <outletCollection property="characterImageViews" destination="yM0-W8-ihj" collectionClass="NSMutableArray" id="MYK-bS-9NQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
