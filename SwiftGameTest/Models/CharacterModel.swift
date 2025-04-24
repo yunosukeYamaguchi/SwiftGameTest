@@ -3,7 +3,7 @@ import Foundation
 // キャラクターモデル
 struct CharacterModel {
     // 成長段階
-    enum GrowthState {
+    enum GrowthState: Int {
         // 幼少期
         case childhood
         // 成長期
@@ -26,19 +26,41 @@ struct CharacterModel {
     var lastFeedDate: Date?
     // 餌をあげた回数
     var last12HourFeedCount: Int
+    // 死亡推定日
+    var dateOfDeath: Date
     // 成長係数
     var growthFactor: Int {
         favorabilityRating / 10
     }
-
-    // 死亡推定日
-    var dateOfDeath: Date
 
     // すでに死んでいるか
     var isDead: Bool {
         let timeInterval = Date().timeIntervalSince(dateOfDeath)
         // 0より大きい値の場合は、推定日よりも後なので死亡判定とする
         return (0 <= timeInterval)
+    }
+    
+    init() {
+        self.currentGrowthState = .childhood
+        self.currentHitPoint = 10
+        self.maxHitPoint = 10
+        self.livingEnvironment = 10
+        self.favorabilityRating = 10
+        self.lastFeedDate = nil
+        self.last12HourFeedCount = 0
+        let random = Int.random(in: 14..<28)
+        self.dateOfDeath = Calendar.current.date(byAdding: .day, value: random, to: Date())!
+    }
+    
+    init(object: CharacterDataObject) {
+        self.currentGrowthState = .init(rawValue: object.currentGrowthState) ?? .maturity
+        self.currentHitPoint = object.currentHitPoint
+        self.maxHitPoint = object.maxHitPoint
+        self.livingEnvironment = object.livingEnvironment
+        self.favorabilityRating = object.favorabilityRating
+        self.lastFeedDate = object.lastFeedDate
+        self.last12HourFeedCount = object.last12HourFeedCount
+        self.dateOfDeath = object.dateOfDeath
     }
     
     // 餌をあげる

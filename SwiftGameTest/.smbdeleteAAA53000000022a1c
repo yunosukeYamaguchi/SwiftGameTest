@@ -41,7 +41,6 @@ class ViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        setupCharacter()
         updateCharacterPosition()
         updateDateLabel()
     }
@@ -99,16 +98,12 @@ class ViewController: UIViewController {
     }
     
     func setupCharacter() {
-        let characterModel: CharacterModel
+        let characterModel = CharacterModel
         if let savedCharacterModel = realmService.fetch() {
             characterModel = savedCharacterModel
         } else {
             characterModel = makeNewCharacter()
         }
-        
-        lifePointValueLabel.text = "\(characterModel.currentHitPoint) / \(characterModel.maxHitPoint)"
-        comfyPointValueLabel.text = "\(characterModel.livingEnvironment) /10"
-        favPointValueLabel.text = "\(characterModel.favorabilityRating) /10"
     }
     
     func makeNewCharacter() -> CharacterModel {
